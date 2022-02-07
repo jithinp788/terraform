@@ -18,7 +18,7 @@ provider "aws" {
 resource "aws_vpc" "test-vpc" {
   cidr_block = "192.168.0.0/16"
   tags = {
-      Name = "testing-terraform"
+      Name = "test123-terraform"
   }
 }
 
@@ -188,6 +188,6 @@ resource "aws_instance" "web-server-instance" {
               sudo bash -c 'echo your very first web server > /var/www/html/index.html'
               EOF
   tags = {
-    Name = "WebServer1"
+    Name = "WebServer123"
   }
 }
